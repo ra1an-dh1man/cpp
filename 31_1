@@ -1,0 +1,33 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+class Converter
+{
+    public:
+    
+    float ex;
+    float dlr;
+    
+    Converter(float ex, float dlr)
+    {
+        this->ex=ex;
+        this->dlr=dlr;
+    }
+    float show()
+    {
+        float num=ex*dlr;
+        cout<<fixed<<setprecision(2)<<ex*dlr;
+    }
+};
+
+int main()
+{
+    float ex,dlr;
+    cin>>ex>>dlr;
+    Converter* obj= new Converter(ex, dlr);
+    obj->show();
+    
+    delete obj;
+    return 0;
+}
