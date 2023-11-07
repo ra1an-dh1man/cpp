@@ -1,3 +1,8 @@
+You are developing a currency converter application for an international finance company. The application is designed to convert an amount of money from USD (United States Dollar) to the desired target currency using a specific exchange rate. The application uses dynamic memory allocation with the new and delete operators to handle exchange rates.
+
+The first line contains the exchange rate.
+The second line contains the amount in USD.
+
 #include<iostream>
 #include<iomanip>
 using namespace std;
